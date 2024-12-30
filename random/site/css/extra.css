@@ -1,0 +1,53 @@
+/* Altera o fundo e a sombra do título da navegação */
+.md-nav--primary .md-nav__title {
+    background: #1a1c1d;  /* Cor de fundo acinzentada, como no fundo da página */
+    box-shadow: 0 0 .4rem .4rem rgba(0, 0, 0, 0);  /* Sombra suave para dar contraste */
+}
+
+.md-nav--secondary .md-nav__title {
+    background: #1a1c1d;  /* Cor de fundo acinzentada, como no fundo da página */
+    box-shadow: 0 0 .4rem .4rem rgba(0, 0, 0, 0);  /* Sombra suave para dar contraste */
+}
+
+/* Altera a cor do texto do título de navegação */
+.md-nav__title {
+    color: #aaa9a5;  /* Cor do texto do título, um tom escuro para bom contraste */
+}
+.md-typeset h1{
+    color: #aaa9a5;
+}
+.md-typeset h2 {
+    color: #ffffff;
+}
+.md-typeset h3 {
+    color: #ffffff;
+}
+.md-typeset h4 {
+    color: #ffffff;
+}
+.md-typeset h5 {
+    color: #ffffff;
+}
+.md-typeset h6 {
+    color: #ffffff;
+}
+.md-nav--primary .md-nav__title  {
+    color: #aaa9a5;  /* Cor do texto do título, um tom escuro para bom contraste */
+}
+.md-nav--secondary .md-nav__title{
+    color: #aaa9a5;  /* Cor do texto do título, um tom escuro para bom contraste */
+}
+
+/* Cor de fundo da página */
+body {
+    background-color: #1a1c1d;  /* Cor de fundo acinzentada */
+}
+
+.md-typeset table:not([class]) td{
+    background: #191b1c;
+}
+
+/* Caso queira alterar a cor do texto do corpo da página também */
+body, .md-content {
+    color: #aaa9a5;  /* Cor do texto do corpo */
+}

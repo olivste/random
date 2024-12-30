@@ -1,0 +1,77 @@
+# Configuração do site
+site_name: Divine Pieces
+site_author: lipestein
+site_description: >
+  Crie um site estático de marca a partir de um conjunto de arquivos Markdown.
+
+# Configuração de IP e porta
+dev_addr: 0.0.0.0:8000
+
+# Tema do site
+theme:
+  name: material  # Tema Material
+  language: pt-BR
+  features:
+    - content.code.copy  # Copiar código ao clicar
+    - navigation.instant  # Navegação instantânea
+    - navigation.instant.progress  # Barra de progresso da navegação
+    - header.autohide  # Ocultar cabeçalho ao rolar
+  palette:
+    - scheme: default
+      primary: 'black'
+      accent: 'red'
+      background: 'black'
+  font:
+    text: 'Roboto'  # Fonte do texto
+    code: 'Fira Code'  # Fonte do código
+
+# Navegação do site
+nav:
+  - Ficha: fichaKaeru.md
+  - Habilidades: habilidades.md
+  - Equipamentos/Itens: itens.md
+  - História: historia.md
+  - Treinamento: treinamento.md
+  - Anotações: anotacoes.md
+
+# JavaScript adicional
+extra_javascript:
+  - https://kit.fontawesome.com/71c3171ee0.js  # Kit do Font Awesome
+
+extra_css:
+  - css/extra.css
+
+# Extensões do Markdown
+markdown_extensions:
+  - admonition
+  - codehilite
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Plugins
+plugins:
+ - search  # Desativado para remover a barra de pesquisa
+
+# Direitos autorais
+copyright: Copyright &copy; Lipe
